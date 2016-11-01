@@ -1,0 +1,50 @@
+page{
+    display: block;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+/* 左侧分类标签--开始*/
+.flex-left{    
+    display: flex;
+    flex-direction: column;
+    width: 250rpx;
+    height: 100%;
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+    background: #aa4400;
+}
+.parent{
+    font-size: 16px;
+}
+.parent-item{
+    padding-top: 20rpx;
+}
+/* 左侧分类标签--结束*/
+
+/* 右侧分类标签--开始*/
+.flex-right{
+    width: 500rpx;
+    height: 100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background: #00ffff;
+}
+.child{
+    font-size: 14px;
+}
+.child-item{
+    padding-top: 20rpx;
+}
+/* 右侧分类标签--结束*/
+
+.line{
+    padding-top: 2rpx;
+    height: 1rpx;
+    background-color: #000000;
+}

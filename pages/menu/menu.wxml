@@ -1,0 +1,32 @@
+<!-- 分类菜谱
+分为左右两部分
+左边：母分类标签
+右边：母分类标签对应的子分类标签
+-->
+
+<view class="content">
+
+    <!-- 左侧母分类标签 -->
+    <view class="flex-left">
+
+        <view class="parent" wx:for="{{classify}}" wx:key="parent">
+            <view id="{{item.parentId}}" class="parent-item" bindtap="handleTap">
+                <text>{{item.name}}</text>
+                <view class="line"></view>
+            </view>
+        </view>
+
+    </view>
+
+    <!-- 右侧子分类标签 -->
+    <view class="flex-right">
+
+        <view class="child" wx:for="{{childs}}" wx:key="child">
+            <view class="child-item" id="{{item.id}}" bindtap="navToList" data-name="{{item.name}}">
+                <text class="widget__name">{{item.name}}</text>
+                <view class="line"></view>
+            </view>
+        </view>
+    
+    </view>
+</view>
