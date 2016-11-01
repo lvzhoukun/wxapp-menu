@@ -1,0 +1,7 @@
+-----menu开始------
+F:修复 classify修改为category;
+F:修复 childs修改为subCategory;
+A:增加了很多注释;
+A:增加了网络访问失败的处理,使用了wx.showToast();
+A:对网络访问得来的数据进行缓存，优先从缓存读取数据;
+-----menu结束------

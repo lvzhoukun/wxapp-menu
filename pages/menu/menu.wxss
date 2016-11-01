@@ -19,10 +19,10 @@ page{
     padding-right: 15rpx;
     background: #aa4400;
 }
-.parent{
+.category{
     font-size: 16px;
 }
-.parent-item{
+.category-item{
     padding-top: 20rpx;
 }
 /* 左侧分类标签--结束*/
@@ -35,10 +35,10 @@ page{
     padding-right: 30rpx;
     background: #00ffff;
 }
-.child{
+.subCategory{
     font-size: 14px;
 }
-.child-item{
+.subCategory-item{
     padding-top: 20rpx;
 }
 /* 右侧分类标签--结束*/

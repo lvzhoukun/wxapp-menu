@@ -9,8 +9,8 @@
     <!-- 左侧母分类标签 -->
     <view class="flex-left">
 
-        <view class="parent" wx:for="{{classify}}" wx:key="parent">
-            <view id="{{item.parentId}}" class="parent-item" bindtap="handleTap">
+        <view class="category" wx:for="{{category}}" wx:key="category">
+            <view id="{{item.parentId}}" class="category-item" bindtap="handleTap">
                 <text>{{item.name}}</text>
                 <view class="line"></view>
             </view>
@@ -21,8 +21,9 @@
     <!-- 右侧子分类标签 -->
     <view class="flex-right">
 
-        <view class="child" wx:for="{{childs}}" wx:key="child">
-            <view class="child-item" id="{{item.id}}" bindtap="navToList" data-name="{{item.name}}">
+        <view class="subCategory" wx:for="{{subCategory}}" wx:key="subCategory">
+            <view id="{{item.id}}" class="subCategory-item" bindtap="navToList" 
+                    data-name="{{item.name}}">
                 <text class="widget__name">{{item.name}}</text>
                 <view class="line"></view>
             </view>
