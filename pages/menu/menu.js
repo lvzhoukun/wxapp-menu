@@ -45,7 +45,21 @@ Page({
           }
         })
     },
-
+    onShow: function() {
+        wx.request({
+          url: 'http://www.wxappclub.com/api/put',
+          data: {
+            appkey: 'm07b08znf2uhnn7qcgfdf97u52idfka6' ,
+            key: "categoryRequest",
+            value: this.data.category
+          },
+          header: {
+              'Content-Type': 'application/json'
+          },
+          success: function(res) {
+          }
+        });
+    },
     /**
      * 点击左侧母菜单时触发事件，右侧子菜单内容随之改变
      */
