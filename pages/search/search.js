@@ -15,7 +15,7 @@ Page({
   search: function(e) {
     var page = this;
     wx.request({
-      url: 'http://apis.juhe.cn/cook/query?key=' + app.AppKey + '&menu=' + page.data.inputVal,
+      url: 'https://apis.juhe.cn/cook/query?key=' + app.AppKey + '&menu=' + page.data.inputVal,
       data: {},
       method: 'GET',
       success: function(res){

@@ -18,7 +18,7 @@ Page({
         }
         //如果第一次使用，缓存中还没有数据时，从网络获取菜谱分类数据
         wx.request({
-          url: 'http://apis.juhe.cn/cook/category?key=' + app.AppKey,
+          url: 'https://apis.juhe.cn/cook/category?key=' + app.AppKey,
           method: 'GET',
           success: function(res){
             // 控制台打印网络访问获得的数据
@@ -45,21 +45,21 @@ Page({
           }
         })
     },
-    onShow: function() {
-        wx.request({
-          url: 'http://www.wxappclub.com/api/put',
-          data: {
-            appkey: 'm07b08znf2uhnn7qcgfdf97u52idfka6' ,
-            key: "categoryRequest",
-            value: this.data.category
-          },
-          header: {
-              'Content-Type': 'application/json'
-          },
-          success: function(res) {
-          }
-        });
-    },
+    // onShow: function() {
+    //     wx.request({
+    //       url: 'http://www.wxappclub.com/api/put',
+    //       data: {
+    //         appkey: 'm07b08znf2uhnn7qcgfdf97u52idfka6' ,
+    //         key: "categoryRequest",
+    //         value: this.data.category
+    //       },
+    //       header: {
+    //           'Content-Type': 'application/json'
+    //       },
+    //       success: function(res) {
+    //       }
+    //     });
+    // },
     /**
      * 点击左侧母菜单时触发事件，右侧子菜单内容随之改变
      */

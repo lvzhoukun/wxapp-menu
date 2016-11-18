@@ -15,7 +15,7 @@ Page({
         })
         console.log(cid);
         wx.request({
-          url: 'http://apis.juhe.cn/cook/index?key=' + app.AppKey + '&cid=' + cid,
+          url: 'https://apis.juhe.cn/cook/index?key=' + app.AppKey + '&cid=' + cid,
           method: 'GET',
           success: function(res){
             // success

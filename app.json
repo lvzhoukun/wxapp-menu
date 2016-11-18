@@ -19,13 +19,13 @@
     "position": "bottom",
     "list": [ {
       "pagePath": "pages/menu/menu",
-      "iconPath": "/assets/img/ic_menu.png",
-      "selectedIconPath": "/assets/img/ic_menu.png",
+      "iconPath": "assets/img/ic-menu.png",
+      "selectedIconPath": "assets/img/ic-menu.png",
       "text": "百家菜谱"
     }, {
       "pagePath": "pages/search/search",
-      "iconPath": "/assets/img/ic_search.png",
-      "selectedIconPath": "/assets/img/ic_search.png",
+      "iconPath": "assets/img/ic-search.png",
+      "selectedIconPath": "assets/img/ic-search.png",
       "text": "搜寻美食"
     }]
   },
